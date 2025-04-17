@@ -1,0 +1,57 @@
+### 빌드 디렉토리 ###
+.gradle
+build/
+bin/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### IDE 설정 파일 ###
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+### OS 및 에디터 환경 파일 ###
+.DS_Store
+
+### 민감 정보 - 결제 관련 ###
+**/toss-keys.txt
+**/jwt-secret.txt
+
+### 민감 정보 - 이메일 인증 관련 ###
+**/.env
+src/main/resources/config/.env
+**/oauth-client-id.txt
+src/main/resources/config/oauth-client-id.txt
+
+### 민감 정보 - Firebase 키 보안 ###
+src/main/resources/config/*.json
+
+### 기타 ###
+HELP.md
